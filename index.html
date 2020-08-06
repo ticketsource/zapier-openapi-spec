@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>TicketSource Zapier integration OpenAPI specification</title>
+    <style>
+        body {
+            margin: 3rem 0 0;
+            padding: 0;
+        }
+        .z-10 { z-index: 10 }
+        .flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .flex-1 { flex: 1; }
+        .bg-black { background-color: #22292f; }
+        .fixed { position: fixed }
+        .pin-t { top: 0; }
+        .pin-x {
+            right: 0;
+            left: 0;
+        }
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .h-6 { height: 1.5rem; }
+        .h-12 { height: 3rem; }
+        .items-center {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .text-right { text-align: right; }
+        .text-grey-light { color: #dae1e7; }
+        .hover\:text-white:hover { color: #fff; }
+        .text-xl { font-size: 1.25rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="flex bg-black fixed pin-t pin-x h-12 items-center z-10">
+            <div class="px-6 flex-1">
+                <a href="#redoc">
+                    <img class="h-6" src="https://cdn.ticketsource.co.uk/brochure/images/TicketSource_logo.svg" alt="TicketSource">
+                </a>
+            </div>
+            <div class="px-6 flex-1 text-right">
+                <a class="text-grey-light hover:text-white" href="https://github.com/ticketsource">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div id="redoc"></div>
+    <script defer src="https://pro.fontawesome.com/releases/v5.6.3/js/brands.js" integrity="sha384-VLgz+MgaFCnsFLiBwE3ItNouuqbWV2ZnIqfsA6QRHksEAQfgbcoaQ4PP0ZeS0zS5" crossorigin="anonymous"></script>
+    <script defer src="https://pro.fontawesome.com/releases/v5.6.3/js/fontawesome.js" integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/redoc@2.0.0-rc.36/bundles/redoc.standalone.min.js"></script>
+    <script type="application/javascript">
+        Redoc.init('reference/TicketSource-Zapier-OpenAPI.v1.yaml', {
+          requiredPropsFirst: true,
+          scrollYOffset: 'header nav',
+          theme: {
+            colors: {
+              primary: {
+                main: '#E97117',
+              }
+            }
+          }
+        }, document.getElementById('redoc'));
+    </script>
+</body>
+</html>
